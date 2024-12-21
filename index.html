@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RPS</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="game-container">
       <div class="comp">
         <header>COMPUTER</header>
-        <img src="./img/scissor.png" alt="computer" />
-        <div class="score">comp-score</div>
+        <div class="image-container">
+          <img src="./img/scissor.png" alt="computer" class="comp-img" />
+        </div>
+        <div class="score" id="comp-score">0</div>
       </div>
       <div class="user">
         <header>USER</header>
-        <img src="./img/rock.png" alt="user" />
-        <div class="score">user-score</div>
-        <button class="btn stone">rock</button>
-        <button class="btn paper">paper</button>
-        <button class="btn scissor">scissor</button>
+        <div class="image-container">
+          <img src="./img/rock.png" alt="user" class="user-img" />
+        </div>
+        <div class="score" id="user-score">0</div>
       </div>
-      <p class="g-m">message</p>
-      <button class="again">again</button>
-      <div class="high-score">high-score</div>
-    </main>
-  </body>
+    </div>
+    <div class="buttons">
+      <button class="btn stone">rock</button>
+      <button class="btn paper">paper</button>
+      <button class="btn scissor">scissor</button>
+    </div>
+    <div class="game-info">
+      <p class="game-message">Let's Play!</p>
+      <button class="again">Play Again</button>
+    </div>
+    <footer>
+      Made by <a href="https://www.linkedin.com/in/vinodhkumar102/" target="_blank">Vinodh Kumar</a>
+    </footer>
+  </main>
+
+
+</body>
+
 </html>
